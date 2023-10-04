@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-6.5-2 | Pseudo Element Before After </title>
+    <span>Milestone-1-Module-6.5-2</span>
+    <style>
+        h2 {
+            color: royalblue;
+        }
+
+        h2:hover {
+            color: skyblue;
+            background-color: seagreen;
+            margin: 20px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 70px;
+        }
+
+        .middle-person:focus {
+            color: blue;
+            font-weight: 700;
+        }
+
+        a:visited {
+            color: red;
+        }
+        li:first-child{
+            color: rgb(177, 43, 115);
+        }
+        li:last-child{
+            background-color: lightcoral;
+         }
+        /* li:nth-child(n){
+            color: crimson; 
+        } */
+        li:nth-child(2n){
+            color: crimson;
+        }
+        li:nth-child(2n+1){
+            background-color: lightgrey;
+        }
+        h3::before{
+            content: 'Hello ';
+        }
+        /* h3::after{
+            content: 'Ending';
+            background-color: aqua;
+            font-size: 15px;
+        } */
+        .special::after{
+            content: 'Ending';
+            background-color: aqua;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is normal</h2>
+    <input type="text">
+    <input class="middle-person" type="text">
+    <input type="text">
+
+    <br>
+    <a href="https://www.google.co.uk/">Go to Google</a>
+    <a href="https://www.underconsideration.com/brandnew/">Go to a Brand new Website</a>
+    <a href="https://www.programming-hero.com/">Go to Programming Hero</a>
+
+    <br>
+  
+    <h3 class="special">Middle Size Header-1</h3>
+    <h3>Middle Size Header-2</h3>
+    <h3 class="special">Middle Size Header-3</h3>
+    <h3>Middle Size Header-4</h3>
+    <h3 class="special">Middle Size Header-5</h3>
+    <h3>Middle Size Header-6</h3>
+
+    
+   <ul>
+    <li>Rose</li>
+    <li>Lotus</li>
+    <li>Jasmine</li>
+    <li>Sunflower</li>
+    <li>Daisy</li>
+    <li>Tulip</li>
+    <li>Dahlia</li>
+    <li>Marigold</li>
+    <li>Lavender</li>
+   </ul>
+<p>
+    <h4>Pseudo:</h4>
+    What Is Pseudo-Code in C? The pseudocode in C is an informal way of writing a program for better human
+    understanding. It is written in simple English, making the complex program easier to understand. Pseudocode
+    cannot be compiled or interpreted.
+</p>
+<h4>First child, nth child, pseudo element before after</h4>
+
+</body>
+
+</html>
